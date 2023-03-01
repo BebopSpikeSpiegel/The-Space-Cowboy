@@ -1,0 +1,13 @@
+{
+  "modid": "Spike_Spiegel",
+  "name": "The Space Cowboy",
+  "author_list": [
+    "Spike"
+  ],
+  "description": "Adds Spike Spiegel from Cowboy Bebop as a new playable character.",
+  "dependencies": [
+    "basemod"
+  ],
+  "version": "0.0.1",
+  "sts_version": "12-18-2022"
+}
