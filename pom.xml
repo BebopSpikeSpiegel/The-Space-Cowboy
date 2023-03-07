@@ -20,7 +20,7 @@
         <artifactId>modthespire</artifactId>
         <version>1.0</version>
         <scope>system</scope>
-        <systemPath>/Users/spike/.m2/repository/com/evacipated/cardcrawl/ModTheSpire.jar</systemPath>
+        <systemPath>${path-mts}</systemPath>
         </dependency>
 
         <dependency>
@@ -28,7 +28,7 @@
             <artifactId>baseMod</artifactId>
             <version>1.0</version>
             <scope>system</scope>
-            <systemPath>/Users/spike/.m2/repository/com/evacipated/cardcrawl/BaseMod.jar</systemPath>
+            <systemPath>${path-bm}</systemPath>
         </dependency>
 
         <dependency>
@@ -36,7 +36,7 @@
             <artifactId>desktop-1.0</artifactId>
             <version>1.0</version>
             <scope>system</scope>
-            <systemPath>/Users/spike/.m2/repository/com/evacipated/cardcrawl/desktop-1.0.jar</systemPath>
+            <systemPath>${path-md}</systemPath>
         </dependency>
     </dependencies>
     <build>
