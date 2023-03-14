@@ -14,7 +14,7 @@ import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import pathes.AbstractCardEnum;
-import pathes.ThmodClassEnum;
+import pathes.ClassEnum;
 
 import java.util.ArrayList;
 
@@ -43,7 +43,7 @@ public class Spike extends CustomPlayer {
     public static final Color BLUE = CardHelper.getColor(0,39,127);
 
     public Spike(String name) {
-        super(name, ThmodClassEnum.Spike_CLASS, ORB_TEXTURES, ORB_VFX, LAYER_SPEED, (String)null,(String)null);
+        super(name, ClassEnum.Spike_CLASS, ORB_TEXTURES, ORB_VFX, LAYER_SPEED, (String)null,(String)null);
         this.dialogX = this.drawX + 0.0F * Settings.scale;
         this.dialogY = this.drawY + 220.0F * Settings.scale;
         initializeClass(SPIKE_STAND, SPIKE_SHOULDER_2, SPIKE_SHOULDER_1,SPIKE_CORPSE,
@@ -85,8 +85,8 @@ public class Spike extends CustomPlayer {
             flavor= "在某一次通过GATE的跨空间旅行中，这个来自西元2071年的太空赏金猎人意外的来到了这座尖塔。";
         } else {
             title = "The Space Cowboy";
-            flavor = "During a space trip through the GATE," +
-                    " this space bounty hunter from the year 2071 came across the spire by accident.";
+            flavor = "A bounty hunter from year 2071. " +
+                    "After a mishap traveling through the GATE, the space cowboy finds himself at the spire.";
         }
 
         return new CharSelectInfo(
@@ -166,9 +166,9 @@ public class Spike extends CustomPlayer {
     public String getLocalizedCharacterName() {
         String char_name;
         if (Settings.language == Settings.GameLanguage.ZHS) {
-            char_name = "斯派克";
+            char_name = "*星际牛仔*";
         } else {
-            char_name = "Spike";
+            char_name = "The Space Cowboy";
         }
         return char_name;
     }

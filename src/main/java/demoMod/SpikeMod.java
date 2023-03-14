@@ -15,14 +15,13 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.localization.Keyword;
-import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndAddToDrawPileEffect;
 import pathes.AbstractCardEnum;
-import pathes.ThmodClassEnum;
+import pathes.ClassEnum;
 import relics.Marlboro;
 
 import java.nio.charset.StandardCharsets;
@@ -45,7 +44,7 @@ public class SpikeMod implements RelicGetSubscriber, PostPowerApplySubscriber, P
     public static final String CARD_ENERGY_ORB = "img/UI_Spike/energyOrb.png";
     //选英雄界面的角色图标、选英雄时的背景图片
     private static final String MY_CHARACTER_BUTTON = "img/charSelect/SpikeButton.png";
-    private static final String MARISA_PORTRAIT = "img/charSelect/SpikePortrait.png";
+    private static final String MARISA_PORTRAIT = "img/charSelect/SpikePortrait.jpg";
     public static final Color BLUE = CardHelper.getColor(0,39,127);
     private ArrayList<AbstractCard> cardsToAdd = new ArrayList<>();
     public static ArrayList<AbstractCard> recyclecards = new ArrayList<>();
@@ -59,7 +58,7 @@ public class SpikeMod implements RelicGetSubscriber, PostPowerApplySubscriber, P
     @Override
     public void receiveEditCharacters() {
         //添加角色到MOD中
-        BaseMod.addCharacter((AbstractPlayer)new Spike("Spike"), MY_CHARACTER_BUTTON, MARISA_PORTRAIT, ThmodClassEnum.Spike_CLASS);
+        BaseMod.addCharacter((AbstractPlayer)new Spike("Spike"), MY_CHARACTER_BUTTON, MARISA_PORTRAIT, ClassEnum.Spike_CLASS);
     }
     //初始化整个MOD,一定不能删
     public static void initialize() {
@@ -113,14 +112,14 @@ public class SpikeMod implements RelicGetSubscriber, PostPowerApplySubscriber, P
 
         String relic="", card="", power="", potion="", event="";
         if (Settings.language == Settings.GameLanguage.ZHS) {
-            card = "localization/ThMod_Spike_cards-zh.json";
-            relic = "localization/ThMod_Spike_relics-zh.json";
-            //power = "localization/ThMod_Spike_powers-zh.json";
-            //potion = "localization/ThMod_Spike_potions-zh.json";
-            //event = "localization/ThMod_Spike_events-zh.json";
+            card = "localization/Spike_cards-zh.json";
+            relic = "localization/Spike_relics-zh.json";
+            //power = "localization/Spike_powers-zh.json";
+            //potion = "localization/Spike_potions-zh.json";
+            //event = "localization/Spike_events-zh.json";
         } else {
-            card = "localization/ThMod_Spike_cards-en.json";
-            relic = "localization/ThMod_Spike_relics-en.json";
+            card = "localization/Spike_cards-en.json";
+            relic = "localization/Spike_relics-en.json";
         }
 
         String relicStrings = Gdx.files.internal(relic).readString(String.valueOf(StandardCharsets.UTF_8));
