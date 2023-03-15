@@ -82,11 +82,12 @@ public class Spike extends CustomPlayer {
         String flavor="";
         if (Settings.language == Settings.GameLanguage.ZHS) {
             title= "*星际牛仔*";
-            flavor= "在某一次通过GATE的跨空间旅行中，这个来自西元2071年的太空赏金猎人意外的来到了这座尖塔。";
+            flavor= "在某一次通过GATE的跨空间旅行中， NL " +
+                    "这个来自西元2071年的太空赏金猎人意外的来到了这座尖塔。";
         } else {
             title = "The Space Cowboy";
-            flavor = "A bounty hunter from year 2071. " +
-                    "After a mishap traveling through the GATE, the space cowboy finds himself at the spire.";
+            flavor = "After a mishap traveling through the GATE, NL " +
+                    "the space cowboy finds himself at the spire.";
         }
 
         return new CharSelectInfo(
