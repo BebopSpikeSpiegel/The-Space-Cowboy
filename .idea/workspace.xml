@@ -4,65 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e0461ab-f557-4be5-9fa6-bb4d2e099168" name="Changes" comment="sets up the overall frame of the mod">
-      <change afterPath="$PROJECT_DIR$/src/main/java/cards/Bang_Spike.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/characters/Spike.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/demoMod/SpikeMod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pathes/AbstractCardEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pathes/LibraryTypeEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pathes/ThmodClassEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/relics/Marlboro.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/1024/SPIKEOrb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/1024/SPIKE_orb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/1024/bg_attack_SPIKE.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/1024/bg_power_SPIKE.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/1024/bg_skill_SPIKE.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/512/SPIKEOrb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/512/SPIKE_orb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/512/bg_attack_SPIKE_s.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/512/bg_power_SPIKE_s.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/512/bg_skill_SPIKE_s.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/UI_Spike/EPanel/layer0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/UI_Spike/EPanel/layer1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/UI_Spike/EPanel/layer1d.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/UI_Spike/EPanel/layer2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/UI_Spike/EPanel/layer2d.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/UI_Spike/EPanel/layer3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/UI_Spike/EPanel/layer3d.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/UI_Spike/EPanel/layer4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/UI_Spike/EPanel/layer4d.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/UI_Spike/EPanel/layer5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/UI_Spike/EPanel/layer5d.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/UI_Spike/badge.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/UI_Spike/energyBlueVFX.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/UI_Spike/energyOrb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/cards_Spike/Bang.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/cards_Spike/Defend.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/cards_Spike/Defend_p.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/cards_Spike/Printf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/cards_Spike/Printf_p.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/cards_Spike/SavePower.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/cards_Spike/SavePower_p.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/cards_Spike/Sin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/cards_Spike/Sin_p.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/cards_Spike/Strike.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/cards_Spike/Strike_p.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/charSelect/SpikeButton.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/charSelect/SpikePortrait.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/char_Spike/Spike.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/char_Spike/fallen.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/char_Spike/shoulder1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/char_Spike/shoulder2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/relics_Spike/Marlboro.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/img/relics_Spike/outline/Marlboro.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/localization/ThMod_Spike_cards-en.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/localization/ThMod_Spike_cards-zh.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/localization/ThMod_Spike_powers-zh.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/localization/ThMod_Spike_relics-en.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/localization/ThMod_Spike_relics-zh.json" afterDir="false" />
+    <list default="true" id="5e0461ab-f557-4be5-9fa6-bb4d2e099168" name="Changes" comment="replace the img of starter relic">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/retaw/spike/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ModTheSpire.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ModTheSpire.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,23 +39,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/spike/IdeaProjects/The Space Cowboy/src/main/resources/img/relics_Spike/outline",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/img/relics_Spike/outline" />
+      <recent name="$PROJECT_DIR$/src/main/resources/img/relics_Spike" />
+      <recent name="$PROJECT_DIR$/src/main/resources/img/cards_Spike" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/img/char_Spike" />
+      <recent name="$PROJECT_DIR$/src/main/resources/img/charSelect" />
       <recent name="$PROJECT_DIR$/src/main/resources/img/cards_Spike" />
     </key>
   </component>
@@ -124,7 +76,9 @@
       <option name="presentableId" value="Default" />
       <updated>1677663423113</updated>
       <workItem from="1677663424417" duration="20833000" />
-      <workItem from="1678715706883" duration="5744000" />
+      <workItem from="1678715706883" duration="9444000" />
+      <workItem from="1678816715045" duration="31000" />
+      <workItem from="1678816767063" duration="10962000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1677666410047</created>
@@ -133,15 +87,57 @@
       <option name="project" value="LOCAL" />
       <updated>1677666410047</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="sets up the overall frame of the mod">
+      <created>1678723510610</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1678723510610</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fixes cards, adds a portrait img, renames some files">
+      <created>1678827526360</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1678827526360</updated>
+    </task>
+    <task id="LOCAL-00004" summary="minor description changes">
+      <created>1678874032006</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1678874032006</updated>
+    </task>
+    <task id="LOCAL-00005" summary="replace the img of starter relic">
+      <created>1678932601159</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1678932601159</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="sets up the overall frame of the mod" />
-    <option name="LAST_COMMIT_MESSAGE" value="sets up the overall frame of the mod" />
+    <MESSAGE value="fixes cards, adds a portrait img, renames some files" />
+    <MESSAGE value="minor description changes" />
+    <MESSAGE value="replace the img of starter relic" />
+    <option name="LAST_COMMIT_MESSAGE" value="replace the img of starter relic" />
   </component>
 </project>
