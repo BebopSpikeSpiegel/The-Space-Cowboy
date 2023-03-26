@@ -44,7 +44,7 @@ public class SpikeMod implements RelicGetSubscriber, PostPowerApplySubscriber, P
     public static final String CARD_ENERGY_ORB = "img/UI_Spike/energyOrb.png";
     //选英雄界面的角色图标、选英雄时的背景图片
     private static final String MY_CHARACTER_BUTTON = "img/charSelect/SpikeButton.png";
-    private static final String MARISA_PORTRAIT = "img/charSelect/SpikePortrait.jpg";
+    private static final String SPIKE_PORTRAIT = "img/charSelect/Spike_19-10art.png";
     public static final Color BLUE = CardHelper.getColor(0,39,127);
     private ArrayList<AbstractCard> cardsToAdd = new ArrayList<>();
     public static ArrayList<AbstractCard> recyclecards = new ArrayList<>();
@@ -58,7 +58,7 @@ public class SpikeMod implements RelicGetSubscriber, PostPowerApplySubscriber, P
     @Override
     public void receiveEditCharacters() {
         //添加角色到MOD中
-        BaseMod.addCharacter((AbstractPlayer)new Spike("Spike"), MY_CHARACTER_BUTTON, MARISA_PORTRAIT, ClassEnum.Spike_CLASS);
+        BaseMod.addCharacter((AbstractPlayer)new Spike("Spike"), MY_CHARACTER_BUTTON, SPIKE_PORTRAIT, ClassEnum.Spike_CLASS);
     }
     //初始化整个MOD,一定不能删
     public static void initialize() {

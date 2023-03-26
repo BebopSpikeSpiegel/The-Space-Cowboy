@@ -3,7 +3,8 @@
   "name": "The Space Cowboy",
   "author_list": [
     "Spike",
-    "Radical Edward"
+    "Radical Edward",
+    "usageni"
   ],
   "credits": "Basemod, ModTheSpire, #modding",
   "description": "Adds Spike Spiegel from Cowboy Bebop as a new playable character.",
@@ -11,6 +12,6 @@
     "basemod",
     "stslib"
   ],
-  "version": "0.0.2.3",
+  "version": "0.0.2.4",
   "sts_version": "12-18-2022"
 }

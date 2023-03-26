@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e0461ab-f557-4be5-9fa6-bb4d2e099168" name="Changes" comment="replace the img of starter relic">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/charSelect/Spike_19-10art.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demoMod/SpikeMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demoMod/SpikeMod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ModTheSpire.config" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ModTheSpire.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ModTheSpire.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ModTheSpire.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/img/charSelect/SpikePortrait.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +49,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/spike/IdeaProjects/The Space Cowboy/src/main/resources/img/relics_Spike/outline",
+    "last_opened_file_path": "/Users/spike/IdeaProjects/The Space Cowboy/src/main/resources/img/charSelect",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -57,6 +61,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/img/charSelect" />
       <recent name="$PROJECT_DIR$/src/main/resources/img/relics_Spike/outline" />
       <recent name="$PROJECT_DIR$/src/main/resources/img/relics_Spike" />
       <recent name="$PROJECT_DIR$/src/main/resources/img/cards_Spike" />
@@ -78,7 +83,7 @@
       <workItem from="1677663424417" duration="20833000" />
       <workItem from="1678715706883" duration="9444000" />
       <workItem from="1678816715045" duration="31000" />
-      <workItem from="1678816767063" duration="10962000" />
+      <workItem from="1678816767063" duration="15392000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1677666410047</created>
@@ -115,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678932601159</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="replace the img of starter relic">
+      <created>1678932807272</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1678932807272</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,6 +149,7 @@
     <MESSAGE value="sets up the overall frame of the mod" />
     <MESSAGE value="fixes cards, adds a portrait img, renames some files" />
     <MESSAGE value="minor description changes" />
+    <MESSAGE value="update" />
     <MESSAGE value="replace the img of starter relic" />
     <option name="LAST_COMMIT_MESSAGE" value="replace the img of starter relic" />
   </component>
