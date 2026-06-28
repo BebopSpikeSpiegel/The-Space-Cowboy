@@ -51,6 +51,12 @@ public class AveMaria_Spike extends AbstractSpikeCard {
     }
 
     @Override
+    public void triggerOnGlowCheck() {
+        this.glowColor = getFlow() >= FLOW_THRESHOLD
+                ? AbstractCard.GOLD_BORDER_GLOW_COLOR : AbstractCard.BLUE_BORDER_GLOW_COLOR;
+    }
+
+    @Override
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
