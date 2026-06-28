@@ -104,10 +104,6 @@
     "NAME": "Bohemian Rhapsody",
     "DESCRIPTION": "占卜 !M! 张。获得 2 点势。"
   },
-  "WordsWeCouldntSay_Spike": {
-    "NAME": "Words That We Couldn't Say",
-    "DESCRIPTION": "造成 !D! 点伤害。施加 !M! 层虚弱。获得 1 点势。"
-  },
   "GoodnightJulia_Spike": {
     "NAME": "Goodnight Julia",
     "DESCRIPTION": "失去 3 点生命。获得 !M! 点势。抽 1 张牌。"
@@ -149,10 +145,6 @@
     "NAME": "Ask DNA",
     "DESCRIPTION": "本回合你打出的下一张攻击牌将打出两次。 NL 消耗。",
     "UPGRADE_DESCRIPTION": "本回合你打出的下一张攻击牌将打出两次。"
-  },
-  "TheEggAndYou_Spike": {
-    "NAME": "The Egg and You",
-    "DESCRIPTION": "你的回合结束时，获得等同于你拥有的势的格挡。"
   },
   "RoadToTheWest_Spike": {
     "NAME": "Road to the West",

@@ -104,10 +104,6 @@
     "NAME": "Bohemian Rhapsody",
     "DESCRIPTION": "Scry !M!. Gain 2 Flow."
   },
-  "WordsWeCouldntSay_Spike": {
-    "NAME": "Words That We Couldn't Say",
-    "DESCRIPTION": "Deal !D! damage. Apply !M! Weak. Gain 1 Flow."
-  },
   "GoodnightJulia_Spike": {
     "NAME": "Goodnight Julia",
     "DESCRIPTION": "Lose 3 HP. Gain !M! Flow. Draw 1 card."
@@ -149,10 +145,6 @@
     "NAME": "Ask DNA",
     "DESCRIPTION": "Your next Attack this turn is played twice. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Your next Attack this turn is played twice."
-  },
-  "TheEggAndYou_Spike": {
-    "NAME": "The Egg and You",
-    "DESCRIPTION": "At the end of your turn, gain Block equal to your Flow."
   },
   "RoadToTheWest_Spike": {
     "NAME": "Road to the West",

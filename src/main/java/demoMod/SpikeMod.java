@@ -147,7 +147,6 @@ public class SpikeMod implements RelicGetSubscriber, PostPowerApplySubscriber, P
         cards.add(new AsteroidBlues_Spike());
         cards.add(new MyFunnyValentine_Spike());
         cards.add(new BohemianRhapsody_Spike());
-        cards.add(new WordsWeCouldntSay_Spike());
         cards.add(new GoodnightJulia_Spike());
         cards.add(new CallMeCallMe_Spike());
         // Rares
@@ -157,7 +156,6 @@ public class SpikeMod implements RelicGetSubscriber, PostPowerApplySubscriber, P
         cards.add(new TheRealFolkBlues_Spike());
         cards.add(new SpaceLion_Spike());
         cards.add(new JammingWithEdward_Spike());
-        cards.add(new TheEggAndYou_Spike());
         cards.add(new RoadToTheWest_Spike());
         cards.add(new AveMaria_Spike());
         cards.add(new Blue_Spike());
