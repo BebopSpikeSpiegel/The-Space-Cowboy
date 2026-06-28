@@ -29,13 +29,13 @@
     "NAME": "Jupiter Jazz",
     "DESCRIPTIONS": [
       "On a frozen street on Callisto, a lone saxophonist plays into the cold air. Gren — soldier, smuggler, something else now. The music is beautiful and sad in equal measure.",
-      "You stand in the cold and listen until the song ends. Something in it sharpens your resolve.",
-      "You buy a round for the bar. Gren nods and slips a crumpled card across the counter — a tip from a man who has nothing left to lose.",
+      "You stand in the cold and listen until the last note fades. The melody stays with you — its rhythm becomes a card in your deck.",
+      "You buy a round for the house. Gren shares the bottle, and for a while the warmth of company knits you back together.",
       "You turn up your collar and walk on. The music fades behind you."
     ],
     "OPTIONS": [
-      "Listen to the Music [Lose 8 HP, Gain 2 Strength]",
-      "Buy a Round [Lose 50 Gold, Gain a Card]",
+      "Listen to the Music [Lose 8 HP, Add Jupiter Jazz to your deck]",
+      "Buy a Round [Lose 50 Gold, Heal 15 HP]",
       "Move On",
       "Leave"
     ]
