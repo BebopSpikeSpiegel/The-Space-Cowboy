@@ -156,6 +156,7 @@ public class SpikeMod implements RelicGetSubscriber, PostPowerApplySubscriber, P
         cards.add(new BohemianRhapsody_Spike());
         cards.add(new GoodnightJulia_Spike());
         cards.add(new CallMeCallMe_Spike());
+        cards.add(new SkiesOfGanymede_Spike());
         // Rares
         cards.add(new Bang_Spike());
         cards.add(new BalladOfFallenAngels_Spike());

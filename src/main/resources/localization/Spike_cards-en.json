@@ -112,6 +112,10 @@
     "NAME": "Call Me Call Me",
     "DESCRIPTION": "Add a copy of a random card from your discard pile to your hand. Gain !M! Flow."
   },
+  "SkiesOfGanymede_Spike": {
+    "NAME": "Skies of Ganymede",
+    "DESCRIPTION": "Deal !D! damage. Apply !M! Weak. Gain 1 Flow."
+  },
   "Bang_Spike": {
     "NAME": "Bang.",
     "DESCRIPTION": "Deal !D! damage, plus !M! damage per Flow. Lose all Flow. NL At the start of your next turn, lose half your current HP. NL Exhaust.",
