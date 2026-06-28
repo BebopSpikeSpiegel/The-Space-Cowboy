@@ -2,7 +2,7 @@ package demoMod;
 
 import basemod.BaseMod;
 import basemod.interfaces.*;
-import cards.Bang_Spike;
+import cards.*;
 import characters.Spike;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Color;
@@ -11,25 +11,23 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.Settings;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.localization.CardStrings;
-import com.megacrit.cardcrawl.localization.Keyword;
+import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.localization.RelicStrings;
-import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
-import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndAddToDrawPileEffect;
 import pathes.AbstractCardEnum;
 import pathes.ClassEnum;
-import relics.Marlboro;
+import relics.*;
 
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
-import java.util.Iterator;
 
 @SpireInitializer
-public class SpikeMod implements RelicGetSubscriber, PostPowerApplySubscriber, PostExhaustSubscriber, PostBattleSubscriber, PostDungeonInitializeSubscriber, EditCharactersSubscriber, PostInitializeSubscriber, EditRelicsSubscriber, EditCardsSubscriber, EditStringsSubscriber, OnCardUseSubscriber, EditKeywordsSubscriber, OnPowersModifiedSubscriber, PostDrawSubscriber, PostEnergyRechargeSubscriber {
+public class SpikeMod implements RelicGetSubscriber, PostPowerApplySubscriber, PostExhaustSubscriber, PostBattleSubscriber, PostDungeonInitializeSubscriber, EditCharactersSubscriber, PostInitializeSubscriber, EditRelicsSubscriber, EditCardsSubscriber, EditStringsSubscriber, OnCardUseSubscriber, EditKeywordsSubscriber, OnPowersModifiedSubscriber, PostDrawSubscriber {
     private static final String MOD_BADGE = "img/UI_Spike/badge.png";
     //攻击、技能、能力牌的图片(512)
     private static final String ATTACK_CC = "img/512/bg_attack_SPIKE_s.png";
@@ -46,8 +44,6 @@ public class SpikeMod implements RelicGetSubscriber, PostPowerApplySubscriber, P
     private static final String MY_CHARACTER_BUTTON = "img/charSelect/SpikeButton.png";
     private static final String SPIKE_PORTRAIT = "img/charSelect/Spike_19-10art.png";
     public static final Color BLUE = CardHelper.getColor(0,39,127);
-    private ArrayList<AbstractCard> cardsToAdd = new ArrayList<>();
-    public static ArrayList<AbstractCard> recyclecards = new ArrayList<>();
 
     public SpikeMod() {
         //构造方法，初始化各种参数
@@ -68,11 +64,9 @@ public class SpikeMod implements RelicGetSubscriber, PostPowerApplySubscriber, P
     @Override
     public void receiveEditCards() {
         //将卡牌批量添加
-        loadCardsToAdd();
-        Iterator<AbstractCard> var1 = this.cardsToAdd.iterator();
-        while (var1.hasNext()) {
-            AbstractCard card = var1.next();
+        for (AbstractCard card : loadCardsToAdd()) {
             BaseMod.addCard(card);
+            UnlockTracker.unlockCard(card.cardID);
         }
     }
 
@@ -103,60 +97,88 @@ public class SpikeMod implements RelicGetSubscriber, PostPowerApplySubscriber, P
 
     @Override
     public void receiveEditKeywords() {
-
+        if (Settings.language == Settings.GameLanguage.ZHS) {
+            BaseMod.addKeyword("势", new String[]{"势"},
+                    "你的连招势能。部分卡牌会获得或消耗势。");
+        } else {
+            BaseMod.addKeyword("Flow", new String[]{"flow", "Flow"},
+                    "Your combat momentum. Some cards gain or spend Flow.");
+        }
     }
 
     @Override
     public void receiveEditStrings() {
-        //读取遗物，卡牌，能力，药水，事件的JSON文本
+        boolean zh = Settings.language == Settings.GameLanguage.ZHS;
+        String lang = zh ? "zh" : "en";
 
-        String relic="", card="", power="", potion="", event="";
-        if (Settings.language == Settings.GameLanguage.ZHS) {
-            card = "localization/Spike_cards-zh.json";
-            relic = "localization/Spike_relics-zh.json";
-            //power = "localization/Spike_powers-zh.json";
-            //potion = "localization/Spike_potions-zh.json";
-            //event = "localization/Spike_events-zh.json";
-        } else {
-            card = "localization/Spike_cards-en.json";
-            relic = "localization/Spike_relics-en.json";
-        }
-
-        String relicStrings = Gdx.files.internal(relic).readString(String.valueOf(StandardCharsets.UTF_8));
-        BaseMod.loadCustomStrings(RelicStrings.class, relicStrings);
-        String cardStrings = Gdx.files.internal(card).readString(String.valueOf(StandardCharsets.UTF_8));
-        BaseMod.loadCustomStrings(CardStrings.class, cardStrings);
-//        String powerStrings = Gdx.files.internal(power).readString(String.valueOf(StandardCharsets.UTF_8));
-//        BaseMod.loadCustomStrings(PowerStrings.class, powerStrings);
-//     String potionStrings = Gdx.files.internal(potion).readString(String.valueOf(StandardCharsets.UTF_8));
-//     BaseMod.loadCustomStrings(PotionStrings.class, potionStrings);
-//     String eventStrings = Gdx.files.internal(event).readString(String.valueOf(StandardCharsets.UTF_8));
-//     BaseMod.loadCustomStrings(EventStrings.class, eventStrings);
+        BaseMod.loadCustomStrings(RelicStrings.class, loadJson("localization/Spike_relics-" + lang + ".json"));
+        BaseMod.loadCustomStrings(CardStrings.class,  loadJson("localization/Spike_cards-"  + lang + ".json"));
+        BaseMod.loadCustomStrings(PowerStrings.class, loadJson("localization/Spike_powers-" + lang + ".json"));
     }
 
-    private void loadCardsToAdd() {
-        //将自定义的卡牌添加到这里
-        this.cardsToAdd.clear();
-        this.cardsToAdd.add(new Bang_Spike());
-        this.cardsToAdd.add(new Bang_Spike());
-        this.cardsToAdd.add(new Bang_Spike());
-        this.cardsToAdd.add(new Bang_Spike());
-        this.cardsToAdd.add(new Bang_Spike());
+    private ArrayList<AbstractCard> loadCardsToAdd() {
+        ArrayList<AbstractCard> cards = new ArrayList<>();
+        // Basics
+        cards.add(new StraightLead_Spike());
+        cards.add(new Dodge_Spike());
+        cards.add(new JeetKuneDo_Spike());
+        cards.add(new Shoot_Spike());
+        // Commons
+        cards.add(new DontBotherNone_Spike());
+        cards.add(new BadDogNoBiscuits_Spike());
+        cards.add(new SpokeyDokey_Spike());
+        cards.add(new FeltTipPen_Spike());
+        cards.add(new Rain_Spike());
+        cards.add(new Rush_Spike());
+        cards.add(new Memory_Spike());
+        cards.add(new FarewellBlues_Spike());
+        cards.add(new TwentyFourHoursOpen_Spike());
+        cards.add(new FantaisieSign_Spike());
+        // Uncommons
+        cards.add(new HeavyMetalQueen_Spike());
+        cards.add(new WaltzForVenus_Spike());
+        cards.add(new HonkyTonkWomen_Spike());
+        cards.add(new SympathyForTheDevil_Spike());
+        cards.add(new CowboyFunk_Spike());
+        cards.add(new SpeakLikeAChild_Spike());
+        cards.add(new MushroomHunting_Spike());
+        cards.add(new GreenBird_Spike());
+        cards.add(new JupiterJazz_Spike());
+        cards.add(new AsteroidBlues_Spike());
+        cards.add(new MyFunnyValentine_Spike());
+        cards.add(new BohemianRhapsody_Spike());
+        cards.add(new WordsWeCouldntSay_Spike());
+        cards.add(new GoodnightJulia_Spike());
+        cards.add(new CallMeCallMe_Spike());
+        // Rares
+        cards.add(new Bang_Spike());
+        cards.add(new BalladOfFallenAngels_Spike());
+        cards.add(new Tank_Spike());
+        cards.add(new TheRealFolkBlues_Spike());
+        cards.add(new SpaceLion_Spike());
+        cards.add(new JammingWithEdward_Spike());
+        cards.add(new TheEggAndYou_Spike());
+        cards.add(new RoadToTheWest_Spike());
+        cards.add(new AveMaria_Spike());
+        cards.add(new Blue_Spike());
+        // Knockin' on Heaven's Door (movie)
+        cards.add(new GottaKnockALittleHarder_Spike());
+        cards.add(new AskDNA_Spike());
+        return cards;
     }
-    //添加一度
     @Override
     public void receiveEditRelics() {
         //将自定义的遗物添加到这里
-        BaseMod.addRelicToCustomPool((AbstractRelic)new Marlboro(),AbstractCardEnum.Spike_COLOR);
+        BaseMod.addRelicToCustomPool(new Marlboro(), AbstractCardEnum.Spike_COLOR);
+        BaseMod.addRelicToCustomPool(new Jericho941(), AbstractCardEnum.Spike_COLOR);
+        BaseMod.addRelicToCustomPool(new Ein(), AbstractCardEnum.Spike_COLOR);
+        BaseMod.addRelicToCustomPool(new BigShot(), AbstractCardEnum.Spike_COLOR);
+        BaseMod.addRelicToCustomPool(new SeeYouSpaceCowboy(), AbstractCardEnum.Spike_COLOR);
+        BaseMod.addRelicToCustomPool(new SwordfishII(), AbstractCardEnum.Spike_COLOR);
     }
 
     @Override
-    public void receiveRelicGet(AbstractRelic relic) {
-
-        if (AbstractDungeon.player.name == "Spike") {
-            // do nothing yet
-        }
-    }
+    public void receiveRelicGet(AbstractRelic relic) {}
 
     @Override
     public void receiveCardUsed(AbstractCard abstractCard) {
@@ -173,19 +195,4 @@ public class SpikeMod implements RelicGetSubscriber, PostPowerApplySubscriber, P
 
     }
 
-    @Override
-    public void receivePostEnergyRecharge() {
-        Iterator<AbstractCard> var1 = recyclecards.iterator();
-
-        while (var1.hasNext()) {
-            AbstractCard c = var1.next();
-            AbstractCard card = c.makeStatEquivalentCopy();
-            AbstractDungeon.effectList.add(new ShowCardAndAddToDrawPileEffect(card, Settings.WIDTH / 2.0F, Settings.HEIGHT / 2.0F, false, true, true));
-        }
-        recyclecards.clear();
-    }
-
-    class Keywords {
-        Keyword[] keywords;
-    }
 }

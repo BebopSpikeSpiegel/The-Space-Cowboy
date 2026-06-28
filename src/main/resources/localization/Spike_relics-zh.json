@@ -1,9 +1,32 @@
 {
   "Marlboro": {
-    "NAME": "万宝路",
+    "NAME": "Marlboro",
     "FLAVOR": "红与白，那是玫瑰与死亡的颜色。",
-    "DESCRIPTIONS": [
-      "每打出5张攻击牌，获得1点能量。"
-    ]
+    "DESCRIPTIONS": ["每场战斗开始时，获得 2 点势。"]
+  },
+  "Jericho941": {
+    "NAME": "Jericho 941",
+    "FLAVOR": "出门从不离身。",
+    "DESCRIPTIONS": ["你每回合打出的第一张攻击牌使你获得 1 点势。"]
+  },
+  "Ein": {
+    "NAME": "Ein",
+    "FLAVOR": "一只数据犬，比看上去聪明得多。",
+    "DESCRIPTIONS": ["每场战斗开始时，预知 3 张牌。"]
+  },
+  "BigShot": {
+    "NAME": "Big Shot",
+    "FLAVOR": "耶！赏金猎人秀！",
+    "DESCRIPTIONS": ["每当你赢得一场战斗，获得 25 金币。"]
+  },
+  "SeeYouSpaceCowboy": {
+    "NAME": "See You Space Cowboy",
+    "FLAVOR": "你将背负这份重量。",
+    "DESCRIPTIONS": ["每场战斗开始时，获得 1 层缓冲。"]
+  },
+  "SwordfishII": {
+    "NAME": "Swordfish II",
+    "FLAVOR": "他的飞船，他的自由。",
+    "DESCRIPTIONS": ["战斗开始时，获得 1 点能量与 2 点势。"]
   }
 }

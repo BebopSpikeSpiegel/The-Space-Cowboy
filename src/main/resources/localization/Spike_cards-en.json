@@ -1,6 +1,169 @@
 {
+  "StraightLead_Spike": {
+    "NAME": "Straight Lead",
+    "DESCRIPTION": "Deal !D! damage."
+  },
+  "Dodge_Spike": {
+    "NAME": "Dodge",
+    "DESCRIPTION": "Gain !B! Block."
+  },
+  "JeetKuneDo_Spike": {
+    "NAME": "Jeet Kune Do",
+    "DESCRIPTION": "Deal !D! damage. Gain !M! Flow."
+  },
+  "Shoot_Spike": {
+    "NAME": "Shoot",
+    "DESCRIPTION": "Deal !D! damage. Apply !M! Vulnerable."
+  },
+  "DontBotherNone_Spike": {
+    "NAME": "Don't Bother None",
+    "DESCRIPTION": "Deal !D! damage. Gain !M! Flow."
+  },
+  "BadDogNoBiscuits_Spike": {
+    "NAME": "Bad Dog No Biscuits",
+    "DESCRIPTION": "Deal !D! damage !M! times."
+  },
+  "SpokeyDokey_Spike": {
+    "NAME": "Spokey Dokey",
+    "DESCRIPTION": "Deal !D! damage."
+  },
+  "FeltTipPen_Spike": {
+    "NAME": "Felt Tip Pen",
+    "DESCRIPTION": "Draw 1 card. Gain !M! Flow."
+  },
+  "Rain_Spike": {
+    "NAME": "Rain",
+    "DESCRIPTION": "Gain !B! Block. If you have 3 or more Flow, gain !M! Block instead."
+  },
+  "Rush_Spike": {
+    "NAME": "Rush",
+    "DESCRIPTION": "Deal !D! damage. Gain !M! Flow."
+  },
+  "Memory_Spike": {
+    "NAME": "Memory",
+    "DESCRIPTION": "Gain !B! Block. Gain 1 Flow."
+  },
+  "FarewellBlues_Spike": {
+    "NAME": "Farewell Blues",
+    "DESCRIPTION": "Deal !D! damage. Draw !M! card(s)."
+  },
+  "TwentyFourHoursOpen_Spike": {
+    "NAME": "24 Hours Open",
+    "DESCRIPTION": "Gain !B! Block. Draw !M! card(s)."
+  },
+  "FantaisieSign_Spike": {
+    "NAME": "Fantaisie Sign",
+    "DESCRIPTION": "Gain !M! Flow.",
+    "UPGRADE_DESCRIPTION": "Gain !M! Flow. Draw 1 card."
+  },
+  "HeavyMetalQueen_Spike": {
+    "NAME": "Heavy Metal Queen",
+    "DESCRIPTION": "Deal !D! damage. Increased by !M! for each Flow you have."
+  },
+  "WaltzForVenus_Spike": {
+    "NAME": "Waltz for Venus",
+    "DESCRIPTION": "Gain !B! Block. Draw !M! card(s)."
+  },
+  "HonkyTonkWomen_Spike": {
+    "NAME": "Honky Tonk Women",
+    "DESCRIPTION": "Gain !M! Flow. Draw 1 card."
+  },
+  "SympathyForTheDevil_Spike": {
+    "NAME": "Sympathy for the Devil",
+    "DESCRIPTION": "Deal !D! damage. Heal !M! HP. If you have 5 or more Flow, heal 5 HP instead."
+  },
+  "CowboyFunk_Spike": {
+    "NAME": "Cowboy Funk",
+    "DESCRIPTION": "Deal !D! damage !M! times. If you have 3 or more Flow, hit 1 additional time."
+  },
+  "SpeakLikeAChild_Spike": {
+    "NAME": "Speak Like a Child",
+    "DESCRIPTION": "Draw !M! cards. Gain 1 Flow."
+  },
+  "MushroomHunting_Spike": {
+    "NAME": "Mushroom Hunting",
+    "DESCRIPTION": "Gain !M! Flow. Draw 1 card. NL Exhaust."
+  },
+  "GreenBird_Spike": {
+    "NAME": "Green Bird",
+    "DESCRIPTION": "Gain !B! Block. Gain !M! Dexterity."
+  },
+  "JupiterJazz_Spike": {
+    "NAME": "Jupiter Jazz",
+    "DESCRIPTION": "At the end of your turn, gain !M! Strength. NL (1 extra while you have 6 or more Flow.)"
+  },
+  "AsteroidBlues_Spike": {
+    "NAME": "Asteroid Blues",
+    "DESCRIPTION": "Deal !D! damage. If this is the first card you play this turn, gain !M! Flow."
+  },
+  "MyFunnyValentine_Spike": {
+    "NAME": "My Funny Valentine",
+    "DESCRIPTION": "Retain. NL Gain !M! Block for each Flow you have."
+  },
+  "BohemianRhapsody_Spike": {
+    "NAME": "Bohemian Rhapsody",
+    "DESCRIPTION": "Scry !M!. Gain 2 Flow."
+  },
+  "WordsWeCouldntSay_Spike": {
+    "NAME": "Words That We Couldn't Say",
+    "DESCRIPTION": "Deal !D! damage. Apply !M! Weak. Gain 1 Flow."
+  },
+  "GoodnightJulia_Spike": {
+    "NAME": "Goodnight Julia",
+    "DESCRIPTION": "Lose 3 HP. Gain !M! Flow. Draw 1 card."
+  },
+  "CallMeCallMe_Spike": {
+    "NAME": "Call Me Call Me",
+    "DESCRIPTION": "Add a copy of a random card from your discard pile to your hand. Gain !M! Flow."
+  },
   "Bang_Spike": {
     "NAME": "Bang.",
-    "DESCRIPTION": "Deal !D! Damages."
+    "DESCRIPTION": "Deal !D! damage, plus !M! damage per Flow. Lose all Flow. NL At the start of your next turn, lose half your current HP. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage, plus !M! damage per Flow. Lose all Flow. NL At the start of your next turn, if any enemy is alive, you die. NL Exhaust."
+  },
+  "BalladOfFallenAngels_Spike": {
+    "NAME": "Ballad of Fallen Angels",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. Gain !M! Flow."
+  },
+  "Tank_Spike": {
+    "NAME": "Tank!",
+    "DESCRIPTION": "At the start of your turn, gain !M! Flow."
+  },
+  "TheRealFolkBlues_Spike": {
+    "NAME": "The Real Folk Blues",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. Draw !M! cards. Gain 2 Flow."
+  },
+  "SpaceLion_Spike": {
+    "NAME": "Space Lion",
+    "DESCRIPTION": "Whenever you lose HP, gain !M! Strength."
+  },
+  "JammingWithEdward_Spike": {
+    "NAME": "Jamming with Edward",
+    "DESCRIPTION": "Gain Flow equal to the number of cards in your hand. Draw !M! cards. NL Exhaust."
+  },
+  "GottaKnockALittleHarder_Spike": {
+    "NAME": "Gotta Knock a Little Harder",
+    "DESCRIPTION": "Deal !D! damage. Damage is doubled while you are at or below half HP."
+  },
+  "AskDNA_Spike": {
+    "NAME": "Ask DNA",
+    "DESCRIPTION": "Your next Attack this turn is played twice. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Your next Attack this turn is played twice."
+  },
+  "TheEggAndYou_Spike": {
+    "NAME": "The Egg and You",
+    "DESCRIPTION": "At the end of your turn, gain Block equal to your Flow."
+  },
+  "RoadToTheWest_Spike": {
+    "NAME": "Road to the West",
+    "DESCRIPTION": "Deal !D! damage, plus !M! damage per Flow. Lose all Flow."
+  },
+  "AveMaria_Spike": {
+    "NAME": "Ave Maria",
+    "DESCRIPTION": "Deal !D! damage. If you have 5 or more Flow, deal !M! damage instead. NL Exhaust."
+  },
+  "Blue_Spike": {
+    "NAME": "Blue",
+    "DESCRIPTION": "Whenever you play a card, gain !M! Flow."
   }
 }

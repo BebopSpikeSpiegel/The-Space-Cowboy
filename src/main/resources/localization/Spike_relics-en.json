@@ -2,8 +2,31 @@
   "Marlboro": {
     "NAME": "Marlboro",
     "FLAVOR": "Red & White, Roses & Death.",
-    "DESCRIPTIONS": [
-      "Gain 1 Energy for every 5 Attack cards played."
-    ]
+    "DESCRIPTIONS": ["At the start of each combat, gain 2 Flow."]
+  },
+  "Jericho941": {
+    "NAME": "Jericho 941",
+    "FLAVOR": "Never leaves home without it.",
+    "DESCRIPTIONS": ["The first Attack you play each turn grants 1 Flow."]
+  },
+  "Ein": {
+    "NAME": "Ein",
+    "FLAVOR": "A data dog. Smarter than he looks.",
+    "DESCRIPTIONS": ["At the start of each combat, Scry 3."]
+  },
+  "BigShot": {
+    "NAME": "Big Shot",
+    "FLAVOR": "Yeah! Big Shot, Big Shot!",
+    "DESCRIPTIONS": ["Whenever you win a battle, gain 25 Gold."]
+  },
+  "SeeYouSpaceCowboy": {
+    "NAME": "See You Space Cowboy",
+    "FLAVOR": "You're gonna carry that weight.",
+    "DESCRIPTIONS": ["At the start of each combat, gain 1 Buffer."]
+  },
+  "SwordfishII": {
+    "NAME": "Swordfish II",
+    "FLAVOR": "His ship. His freedom.",
+    "DESCRIPTIONS": ["At the start of combat, gain 1 Energy and 2 Flow."]
   }
 }

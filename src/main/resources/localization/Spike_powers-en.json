@@ -1,0 +1,30 @@
+{
+  "Flow_Spike": {
+    "NAME": "Flow",
+    "DESCRIPTIONS": ["Your combat momentum. Some cards gain or spend Flow. NL \"Be like water.\""]
+  },
+  "CarryThatWeight_Spike": {
+    "NAME": "Carry That Weight",
+    "DESCRIPTIONS": ["At the start of your next turn, lose half your current HP.", "At the start of your next turn, if any enemy is alive, you die."]
+  },
+  "JupiterJazz_Spike": {
+    "NAME": "Jupiter Jazz",
+    "DESCRIPTIONS": ["At the end of your turn, gain ", " Strength (1 extra if you have 6 or more Flow)."]
+  },
+  "Tank_Spike": {
+    "NAME": "Tank!",
+    "DESCRIPTIONS": ["At the start of your turn, gain ", " Flow."]
+  },
+  "SpaceLion_Spike": {
+    "NAME": "Space Lion",
+    "DESCRIPTIONS": ["Whenever you lose HP, gain ", " Strength."]
+  },
+  "EggAndYou_Spike": {
+    "NAME": "The Egg and You",
+    "DESCRIPTIONS": ["At the end of your turn, gain Block equal to your Flow."]
+  },
+  "Blue_Spike": {
+    "NAME": "Blue",
+    "DESCRIPTIONS": ["Whenever you play a card, gain ", " Flow."]
+  }
+}

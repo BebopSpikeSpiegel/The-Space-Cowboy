@@ -56,13 +56,16 @@ public class Spike extends CustomPlayer {
     public ArrayList<String> getStartingDeck() {
         // Initial Deck
         ArrayList<String> retVal = new ArrayList<>();
-        retVal.add("Bang_Spike");
-        retVal.add("Bang_Spike");
-        retVal.add("Bang_Spike");
-        retVal.add("Bang_Spike");
-        retVal.add("Bang_Spike");
-        retVal.add("Bang_Spike");
-        retVal.add("Bang_Spike");
+        retVal.add("StraightLead_Spike");
+        retVal.add("StraightLead_Spike");
+        retVal.add("StraightLead_Spike");
+        retVal.add("StraightLead_Spike");
+        retVal.add("Shoot_Spike");
+        retVal.add("Dodge_Spike");
+        retVal.add("Dodge_Spike");
+        retVal.add("Dodge_Spike");
+        retVal.add("Dodge_Spike");
+        retVal.add("JeetKuneDo_Spike");
         return retVal;
     }
 

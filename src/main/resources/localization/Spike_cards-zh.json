@@ -1,6 +1,169 @@
 {
+  "StraightLead_Spike": {
+    "NAME": "直拳",
+    "DESCRIPTION": "造成 !D! 点伤害。"
+  },
+  "Dodge_Spike": {
+    "NAME": "闪避",
+    "DESCRIPTION": "获得 !B! 点格挡。"
+  },
+  "JeetKuneDo_Spike": {
+    "NAME": "截拳道",
+    "DESCRIPTION": "造成 !D! 点伤害。获得 !M! 点势。"
+  },
+  "Shoot_Spike": {
+    "NAME": "射击",
+    "DESCRIPTION": "造成 !D! 点伤害。施加 !M! 层易伤。"
+  },
+  "DontBotherNone_Spike": {
+    "NAME": "Don't Bother None",
+    "DESCRIPTION": "造成 !D! 点伤害。获得 !M! 点势。"
+  },
+  "BadDogNoBiscuits_Spike": {
+    "NAME": "Bad Dog No Biscuits",
+    "DESCRIPTION": "造成 !D! 点伤害 !M! 次。"
+  },
+  "SpokeyDokey_Spike": {
+    "NAME": "Spokey Dokey",
+    "DESCRIPTION": "造成 !D! 点伤害。"
+  },
+  "FeltTipPen_Spike": {
+    "NAME": "Felt Tip Pen",
+    "DESCRIPTION": "抽 1 张牌。获得 !M! 点势。"
+  },
+  "Rain_Spike": {
+    "NAME": "Rain",
+    "DESCRIPTION": "获得 !B! 点格挡。若你拥有至少 3 点势，改为获得 !M! 点格挡。"
+  },
+  "Rush_Spike": {
+    "NAME": "Rush",
+    "DESCRIPTION": "造成 !D! 点伤害。获得 !M! 点势。"
+  },
+  "Memory_Spike": {
+    "NAME": "Memory",
+    "DESCRIPTION": "获得 !B! 点格挡。获得 1 点势。"
+  },
+  "FarewellBlues_Spike": {
+    "NAME": "Farewell Blues",
+    "DESCRIPTION": "造成 !D! 点伤害。抽 !M! 张牌。"
+  },
+  "TwentyFourHoursOpen_Spike": {
+    "NAME": "24 Hours Open",
+    "DESCRIPTION": "获得 !B! 点格挡。抽 !M! 张牌。"
+  },
+  "FantaisieSign_Spike": {
+    "NAME": "Fantaisie Sign",
+    "DESCRIPTION": "获得 !M! 点势。",
+    "UPGRADE_DESCRIPTION": "获得 !M! 点势。抽 1 张牌。"
+  },
+  "HeavyMetalQueen_Spike": {
+    "NAME": "Heavy Metal Queen",
+    "DESCRIPTION": "造成 !D! 点伤害。每拥有 1 点势，伤害提高 !M! 点。"
+  },
+  "WaltzForVenus_Spike": {
+    "NAME": "Waltz for Venus",
+    "DESCRIPTION": "获得 !B! 点格挡。抽 !M! 张牌。"
+  },
+  "HonkyTonkWomen_Spike": {
+    "NAME": "Honky Tonk Women",
+    "DESCRIPTION": "获得 !M! 点势。抽 1 张牌。"
+  },
+  "SympathyForTheDevil_Spike": {
+    "NAME": "Sympathy for the Devil",
+    "DESCRIPTION": "造成 !D! 点伤害。回复 !M! 点生命。若你拥有至少 5 点势，改为回复 5 点生命。"
+  },
+  "CowboyFunk_Spike": {
+    "NAME": "Cowboy Funk",
+    "DESCRIPTION": "造成 !D! 点伤害 !M! 次。若你拥有至少 3 点势，则额外攻击 1 次。"
+  },
+  "SpeakLikeAChild_Spike": {
+    "NAME": "Speak Like a Child",
+    "DESCRIPTION": "抽 !M! 张牌。获得 1 点势。"
+  },
+  "MushroomHunting_Spike": {
+    "NAME": "Mushroom Hunting",
+    "DESCRIPTION": "获得 !M! 点势。抽 1 张牌。 NL 消耗。"
+  },
+  "GreenBird_Spike": {
+    "NAME": "Green Bird",
+    "DESCRIPTION": "获得 !B! 点格挡。获得 !M! 点敏捷。"
+  },
+  "JupiterJazz_Spike": {
+    "NAME": "Jupiter Jazz",
+    "DESCRIPTION": "你的回合结束时，获得 !M! 点力量。 NL （若你拥有至少 6 点势，则额外获得 1 点。）"
+  },
+  "AsteroidBlues_Spike": {
+    "NAME": "Asteroid Blues",
+    "DESCRIPTION": "造成 !D! 点伤害。若这是你本回合打出的第一张牌，获得 !M! 点势。"
+  },
+  "MyFunnyValentine_Spike": {
+    "NAME": "My Funny Valentine",
+    "DESCRIPTION": "保留。 NL 每拥有 1 点势，获得 !M! 点格挡。"
+  },
+  "BohemianRhapsody_Spike": {
+    "NAME": "Bohemian Rhapsody",
+    "DESCRIPTION": "占卜 !M! 张。获得 2 点势。"
+  },
+  "WordsWeCouldntSay_Spike": {
+    "NAME": "Words That We Couldn't Say",
+    "DESCRIPTION": "造成 !D! 点伤害。施加 !M! 层虚弱。获得 1 点势。"
+  },
+  "GoodnightJulia_Spike": {
+    "NAME": "Goodnight Julia",
+    "DESCRIPTION": "失去 3 点生命。获得 !M! 点势。抽 1 张牌。"
+  },
+  "CallMeCallMe_Spike": {
+    "NAME": "Call Me Call Me",
+    "DESCRIPTION": "将你弃牌堆中一张随机牌的复制加入手牌。获得 !M! 点势。"
+  },
   "Bang_Spike": {
     "NAME": "Bang.",
-    "DESCRIPTION": "造成 !D! 点伤害。"
+    "DESCRIPTION": "造成 !D! 点伤害，每点势额外造成 !M! 点伤害。失去所有势。 NL 你的下回合开始时，失去当前一半的生命值。 NL 消耗。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，每点势额外造成 !M! 点伤害。失去所有势。 NL 你的下回合开始时，若仍有敌人存活，你将死亡。 NL 消耗。"
+  },
+  "BalladOfFallenAngels_Spike": {
+    "NAME": "Ballad of Fallen Angels",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。获得 !M! 点势。"
+  },
+  "Tank_Spike": {
+    "NAME": "Tank!",
+    "DESCRIPTION": "你的回合开始时，获得 !M! 点势。"
+  },
+  "TheRealFolkBlues_Spike": {
+    "NAME": "The Real Folk Blues",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。抽 !M! 张牌。获得 2 点势。"
+  },
+  "SpaceLion_Spike": {
+    "NAME": "Space Lion",
+    "DESCRIPTION": "每当你失去生命时，获得 !M! 点力量。"
+  },
+  "JammingWithEdward_Spike": {
+    "NAME": "Jamming with Edward",
+    "DESCRIPTION": "获得等同于你手牌数量的势。抽 !M! 张牌。 NL 消耗。"
+  },
+  "GottaKnockALittleHarder_Spike": {
+    "NAME": "Gotta Knock a Little Harder",
+    "DESCRIPTION": "造成 !D! 点伤害。当你的生命值不高于一半时，伤害翻倍。"
+  },
+  "AskDNA_Spike": {
+    "NAME": "Ask DNA",
+    "DESCRIPTION": "本回合你打出的下一张攻击牌将打出两次。 NL 消耗。",
+    "UPGRADE_DESCRIPTION": "本回合你打出的下一张攻击牌将打出两次。"
+  },
+  "TheEggAndYou_Spike": {
+    "NAME": "The Egg and You",
+    "DESCRIPTION": "你的回合结束时，获得等同于你拥有的势的格挡。"
+  },
+  "RoadToTheWest_Spike": {
+    "NAME": "Road to the West",
+    "DESCRIPTION": "造成 !D! 点伤害，每点势额外造成 !M! 点伤害。失去所有势。"
+  },
+  "AveMaria_Spike": {
+    "NAME": "Ave Maria",
+    "DESCRIPTION": "造成 !D! 点伤害。若你拥有至少 5 点势，改为造成 !M! 点伤害。 NL 消耗。"
+  },
+  "Blue_Spike": {
+    "NAME": "Blue",
+    "DESCRIPTION": "每当你打出一张牌，获得 !M! 点势。"
   }
 }

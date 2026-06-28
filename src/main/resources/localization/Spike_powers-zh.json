@@ -1,0 +1,30 @@
+{
+  "Flow_Spike": {
+    "NAME": "势",
+    "DESCRIPTIONS": ["你的连招势能。部分卡牌会获得或消耗势。 NL 行云流水。"]
+  },
+  "CarryThatWeight_Spike": {
+    "NAME": "Carry That Weight",
+    "DESCRIPTIONS": ["你的下回合开始时，失去当前一半的生命值。", "你的下回合开始时，若仍有敌人存活，你将死亡。"]
+  },
+  "JupiterJazz_Spike": {
+    "NAME": "Jupiter Jazz",
+    "DESCRIPTIONS": ["你的回合结束时，获得 ", " 点力量（若你拥有至少 6 点势，则额外获得 1 点）。"]
+  },
+  "Tank_Spike": {
+    "NAME": "Tank!",
+    "DESCRIPTIONS": ["你的回合开始时，获得 ", " 点势。"]
+  },
+  "SpaceLion_Spike": {
+    "NAME": "Space Lion",
+    "DESCRIPTIONS": ["每当你失去生命时，获得 ", " 点力量。"]
+  },
+  "EggAndYou_Spike": {
+    "NAME": "The Egg and You",
+    "DESCRIPTIONS": ["你的回合结束时，获得等同于你拥有的势的格挡。"]
+  },
+  "Blue_Spike": {
+    "NAME": "Blue",
+    "DESCRIPTIONS": ["每当你打出一张牌，获得 ", " 点势。"]
+  }
+}
