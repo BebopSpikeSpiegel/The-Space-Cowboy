@@ -161,7 +161,7 @@ Third-party content (episode screenshots, OST cover frames, and all *Cowboy Bebo
 
 ## Credits
 
-- **Mod author:** Spike (Res)
+- **Mod author:** Spike
 - **Character art:** usageni
 - **Card & relic art:** ComfyUI (anima-base-v1.0) + episode screenshots from *Cowboy Bebop* (Sunrise)
 - **Original game:** *Cowboy Bebop* © Sunrise · *Slay the Spire* © Mega Crit Games
