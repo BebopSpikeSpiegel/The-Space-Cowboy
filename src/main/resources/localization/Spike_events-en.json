@@ -1,0 +1,43 @@
+{
+  "BigShot_Spike": {
+    "NAME": "Big Shot!",
+    "DESCRIPTIONS": [
+      "A battered monitor flickers to life. Punch and Judy are mid-broadcast on Big Shot!, rattling off a bounty in this sector. High risk. High reward. Just the way Spike likes it.",
+      "You jot down the mark's last known location. The Woolong will spend nicely.",
+      "You click off the screen. Not worth the trouble today."
+    ],
+    "OPTIONS": [
+      "Take the Job [Gain 75 Gold]",
+      "Change the Channel",
+      "Leave"
+    ]
+  },
+  "ToysInTheAttic_Spike": {
+    "NAME": "Toys in the Attic",
+    "DESCRIPTIONS": [
+      "Something shifts inside a sealed container. Nobody put it there — or nobody remembers. The smell is wrong. The shape is wrong. But there might be something valuable buried underneath.",
+      "You reach inside. Bad idea. Whatever bit you retreats into the dark. You feel weaker, but your hand closes around something useful.",
+      "You back away slowly and leave the container sealed. Some things are better left alone."
+    ],
+    "OPTIONS": [
+      "Look Inside [Lose 15% Max HP, Gain a Rare Card]",
+      "Leave It Alone",
+      "Leave"
+    ]
+  },
+  "JupiterJazz_Spike": {
+    "NAME": "Jupiter Jazz",
+    "DESCRIPTIONS": [
+      "On a frozen street on Callisto, a lone saxophonist plays into the cold air. Gren — soldier, smuggler, something else now. The music is beautiful and sad in equal measure.",
+      "You stand in the cold and listen until the song ends. Something in it sharpens your resolve.",
+      "You buy a round for the bar. Gren nods and slips a crumpled card across the counter — a tip from a man who has nothing left to lose.",
+      "You turn up your collar and walk on. The music fades behind you."
+    ],
+    "OPTIONS": [
+      "Listen to the Music [Lose 8 HP, Gain 2 Strength]",
+      "Buy a Round [Lose 50 Gold, Gain a Card]",
+      "Move On",
+      "Leave"
+    ]
+  }
+}

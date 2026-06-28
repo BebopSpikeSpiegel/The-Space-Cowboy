@@ -2,6 +2,9 @@ package demoMod;
 
 import basemod.BaseMod;
 import basemod.interfaces.*;
+import events.BigShotEvent;
+import events.JupiterJazzEvent;
+import events.ToysInTheAtticEvent;
 import cards.*;
 import characters.Spike;
 import com.badlogic.gdx.Gdx;
@@ -14,6 +17,7 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.localization.CardStrings;
+import com.megacrit.cardcrawl.localization.EventStrings;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
@@ -111,9 +115,10 @@ public class SpikeMod implements RelicGetSubscriber, PostPowerApplySubscriber, P
         boolean zh = Settings.language == Settings.GameLanguage.ZHS;
         String lang = zh ? "zh" : "en";
 
-        BaseMod.loadCustomStrings(RelicStrings.class, loadJson("localization/Spike_relics-" + lang + ".json"));
-        BaseMod.loadCustomStrings(CardStrings.class,  loadJson("localization/Spike_cards-"  + lang + ".json"));
-        BaseMod.loadCustomStrings(PowerStrings.class, loadJson("localization/Spike_powers-" + lang + ".json"));
+        BaseMod.loadCustomStrings(RelicStrings.class, loadJson("localization/Spike_relics-"  + lang + ".json"));
+        BaseMod.loadCustomStrings(CardStrings.class,  loadJson("localization/Spike_cards-"   + lang + ".json"));
+        BaseMod.loadCustomStrings(PowerStrings.class, loadJson("localization/Spike_powers-"  + lang + ".json"));
+        BaseMod.loadCustomStrings(EventStrings.class, loadJson("localization/Spike_events-"  + lang + ".json"));
     }
 
     private ArrayList<AbstractCard> loadCardsToAdd() {
@@ -190,7 +195,9 @@ public class SpikeMod implements RelicGetSubscriber, PostPowerApplySubscriber, P
 
     @Override
     public void receivePostInitialize() {
-
+        BaseMod.addEvent(BigShotEvent.ID, BigShotEvent.class);
+        BaseMod.addEvent(ToysInTheAtticEvent.ID, ToysInTheAtticEvent.class);
+        BaseMod.addEvent(JupiterJazzEvent.ID, JupiterJazzEvent.class);
     }
 
 }
