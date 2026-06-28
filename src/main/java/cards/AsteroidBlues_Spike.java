@@ -29,6 +29,16 @@ public class AsteroidBlues_Spike extends AbstractSpikeCard {
         }
     }
 
+    /** Gold glow while it would still be the first card played this turn (bonus active). */
+    @Override
+    public void triggerOnGlowCheck() {
+        if (AbstractDungeon.actionManager.cardsPlayedThisTurn.isEmpty()) {
+            this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR;
+        } else {
+            this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR;
+        }
+    }
+
     @Override
     public void upgrade() {
         if (!this.upgraded) {
