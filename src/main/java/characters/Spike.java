@@ -2,12 +2,16 @@ package characters;
 
 import basemod.abstracts.CustomPlayer;
 import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
+import com.badlogic.gdx.math.MathUtils;
+import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.EnergyManager;
 import com.megacrit.cardcrawl.core.Settings;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.events.beyond.SpireHeart;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.helpers.FontHelper;
@@ -26,6 +30,11 @@ public class Spike extends CustomPlayer {
     private static final String SPIKE_SHOULDER_1 = "img/char_Spike/shoulder1.png";
     private static final String SPIKE_CORPSE = "img/char_Spike/fallen.png";
     private static final String SPIKE_STAND = "img/char_Spike/Spike.png";
+    /** Pool of corpse sprites, preloaded once; one is picked at random each run (see {@link #randomizeCorpse}). */
+    private static final Texture[] CORPSE_POOL = {
+            ImageMaster.loadImage("img/char_Spike/fallen.png"),
+            ImageMaster.loadImage("img/char_Spike/fallen2.png"),
+    };
 
     //stuff
     private static final String[] ORB_TEXTURES = new String[] { "img/UI_Spike/EPanel/layer5.png", "img/UI_Spike/EPanel/layer4.png", "img/UI_Spike/EPanel/layer3.png", "img/UI_Spike/EPanel/layer2.png", "img/UI_Spike/EPanel/layer1.png", "img/UI_Spike/EPanel/layer0.png", "img/UI_Spike/EPanel/layer5d.png", "img/UI_Spike/EPanel/layer4d.png", "img/UI_Spike/EPanel/layer3d.png", "img/UI_Spike/EPanel/layer2d.png", "img/UI_Spike/EPanel/layer1d.png" };
@@ -50,6 +59,21 @@ public class Spike extends CustomPlayer {
                 getLoadout(),
                 0.0F, 5.0F, 240.0F, 300.0F,
                 new EnergyManager(ENERGY_PER_TURN));
+    }
+
+    /**
+     * Swap in a random corpse sprite. STS only supports one corpse image per
+     * character, so we re-point {@code corpseImg} at a random pick from the
+     * preloaded {@link #CORPSE_POOL} at the start of each run for variety.
+     */
+    public static void randomizeCorpse() {
+        if (!(AbstractDungeon.player instanceof Spike)) {
+            return;
+        }
+        Texture tex = CORPSE_POOL[MathUtils.random(CORPSE_POOL.length - 1)];
+        if (tex != null) {
+            AbstractDungeon.player.corpseImg = tex;
+        }
     }
 
     @Override

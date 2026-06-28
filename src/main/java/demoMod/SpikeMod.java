@@ -88,7 +88,9 @@ public class SpikeMod implements RelicGetSubscriber, PostPowerApplySubscriber, P
 
 
     @Override
-    public void receivePostDungeonInitialize() {}
+    public void receivePostDungeonInitialize() {
+        Spike.randomizeCorpse();
+    }
 
 
     @Override
