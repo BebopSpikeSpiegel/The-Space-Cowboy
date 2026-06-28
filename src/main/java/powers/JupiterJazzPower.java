@@ -19,10 +19,8 @@ public class JupiterJazzPower extends AbstractPower {
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
     private static final String ICON_128 = "img/UI_Spike/powers/JupiterJazz_Spike.png";
     private static final String ICON_48  = "img/UI_Spike/powers/JupiterJazz_Spike48.png";
-    private static final Texture TEX_128 = ImageMaster.loadImage(ICON_128);
-    private static final Texture TEX_48  = ImageMaster.loadImage(ICON_48);
-    private static final TextureAtlas.AtlasRegion IMG_128 = new TextureAtlas.AtlasRegion(TEX_128, 0, 0, TEX_128.getWidth(), TEX_128.getHeight());
-    private static final TextureAtlas.AtlasRegion IMG_48  = new TextureAtlas.AtlasRegion(TEX_48,  0, 0, TEX_48.getWidth(),  TEX_48.getHeight());
+    private static final TextureAtlas.AtlasRegion IMG_128 = SpikeIcons.load(ICON_128);
+    private static final TextureAtlas.AtlasRegion IMG_48  = SpikeIcons.load(ICON_48);
     private static final int FLOW_THRESHOLD = 6;
 
     public JupiterJazzPower(AbstractCreature owner, int amount) {
