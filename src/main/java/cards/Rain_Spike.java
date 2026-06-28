@@ -34,7 +34,13 @@ public class Rain_Spike extends AbstractSpikeCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        gainBlock();
+        int saved = this.baseBlock;
+        if (getFlow() >= FLOW_THRESHOLD) {
+            this.baseBlock = this.magicNumber;
+        }
+        applyPowersToBlock();
+        gainBlock(this.block);
+        this.baseBlock = saved;
     }
 
     @Override

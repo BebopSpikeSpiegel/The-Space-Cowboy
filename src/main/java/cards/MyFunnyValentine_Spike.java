@@ -30,7 +30,10 @@ public class MyFunnyValentine_Spike extends AbstractSpikeCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        gainBlock();
+        this.baseBlock = getFlow() * this.magicNumber;
+        applyPowersToBlock();
+        gainBlock(this.block);
+        this.baseBlock = 0;
     }
 
     @Override
