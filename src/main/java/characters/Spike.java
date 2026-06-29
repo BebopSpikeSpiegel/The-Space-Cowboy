@@ -159,7 +159,7 @@ public class Spike extends CustomPlayer {
 
     @Override
     public AbstractCard getStartCardForEvent() {
-        return null;
+        return new cards.StraightLead_Spike();
     }
 
     @Override
