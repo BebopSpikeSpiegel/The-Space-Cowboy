@@ -14,6 +14,8 @@ public class Dodge_Spike extends AbstractSpikeCard {
     public Dodge_Spike() {
         super(ID, IMG, COST, CardType.SKILL, CardRarity.BASIC, CardTarget.SELF);
         this.baseBlock = BLOCK;
+        // Spike's "Defend": flag it as a starter Defend for effects that key off it.
+        this.tags.add(AbstractCard.CardTags.STARTER_DEFEND);
     }
 
     @Override

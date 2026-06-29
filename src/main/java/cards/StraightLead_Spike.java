@@ -15,6 +15,9 @@ public class StraightLead_Spike extends AbstractSpikeCard {
     public StraightLead_Spike() {
         super(ID, IMG, COST, CardType.ATTACK, CardRarity.BASIC, CardTarget.ENEMY);
         this.baseDamage = DAMAGE;
+        // Spike's "Strike": let base-game effects (Perfected Strike, Strike Dummy, etc.) recognize it.
+        this.tags.add(AbstractCard.CardTags.STARTER_STRIKE);
+        this.tags.add(AbstractCard.CardTags.STRIKE);
     }
 
     @Override
