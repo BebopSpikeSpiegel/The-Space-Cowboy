@@ -222,8 +222,10 @@ public class Spike extends CustomPlayer {
 
     @Override
     public String getVampireText() {
-
-        return null;
+        if (Settings.language == Settings.GameLanguage.ZHS) {
+            return "苍白的身影在暗处游走，满口獠牙与许诺。「加入我们吧。再不必痛。永远活下去。」 NL 你躲过比这更糟的交易——可力量终归是力量，而长夜漫漫。";
+        }
+        return "Pale figures circle in the dark, all teeth and promises. \"Join us. Feel nothing. Live forever.\" NL You've walked away from worse offers - but power is power, and the night is long.";
     }
     public void applyEndOfTurnTriggers() {
         super.applyEndOfTurnTriggers();
