@@ -42,8 +42,8 @@ public class Spike extends CustomPlayer {
     private static final float[] LAYER_SPEED = new float[] { -40.0F, -32.0F, 20.0F, -20.0F, 0.0F, -10.0F, -8.0F, 5.0F, -5.0F, 0.0F };
 
     //HP, Gold etc
-    private static final int STARTING_HP = 75;
-    private static final int MAX_HP = 75;
+    private static final int STARTING_HP = 80;
+    private static final int MAX_HP = 80;
     private static final int STARTING_GOLD = 99;
     private static final int HAND_SIZE = 0;
     private static final int ASCENSION_MAX_HP_LOSS = 5;

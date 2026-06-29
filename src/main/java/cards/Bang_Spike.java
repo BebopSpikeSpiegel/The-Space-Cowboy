@@ -19,7 +19,7 @@ public class Bang_Spike extends AbstractSpikeCard {
     private static final String IMG = "img/cards_Spike/Bang.png";
     private static final int COST = 2;
     private static final int DAMAGE = 9;
-    private static final int PER_FLOW = 3;
+    private static final int PER_FLOW = 4;
     private static final int UPGRADE_PER_FLOW = 2;
 
     public Bang_Spike() {
@@ -51,8 +51,11 @@ public class Bang_Spike extends AbstractSpikeCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         dealDamage(m, AbstractGameAction.AttackEffect.FIRE);
         loseAllFlow();
-        AbstractDungeon.actionManager.addToBottom(
-                new ApplyPowerAction(p, p, new CarryThatWeightPower(p, this.upgraded), 1));
+        // Baseline carries the weight (small fixed HP loss next turn); upgraded has no downside.
+        if (!this.upgraded) {
+            AbstractDungeon.actionManager.addToBottom(
+                    new ApplyPowerAction(p, p, new CarryThatWeightPower(p), 1));
+        }
     }
 
     @Override

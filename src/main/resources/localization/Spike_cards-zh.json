@@ -118,8 +118,8 @@
   },
   "Bang_Spike": {
     "NAME": "Bang.",
-    "DESCRIPTION": "造成 !D! 点伤害，每点势额外造成 !M! 点伤害。失去所有势。 NL 你的下回合开始时，失去当前一半的生命值。 NL 消耗。",
-    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，每点势额外造成 !M! 点伤害。失去所有势。 NL 你的下回合开始时，若仍有敌人存活，你将死亡。 NL 消耗。"
+    "DESCRIPTION": "造成 !D! 点伤害，每点势额外造成 !M! 点伤害。失去所有势。 NL 你的下回合开始时，失去 8 点生命值。 NL 消耗。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，每点势额外造成 !M! 点伤害。失去所有势。 NL 消耗。"
   },
   "BalladOfFallenAngels_Spike": {
     "NAME": "Ballad of Fallen Angels",

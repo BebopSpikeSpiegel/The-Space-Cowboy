@@ -5,7 +5,7 @@
   },
   "CarryThatWeight_Spike": {
     "NAME": "Carry That Weight",
-    "DESCRIPTIONS": ["At the start of your next turn, lose half your current HP.", "At the start of your next turn, if any enemy is alive, you die."]
+    "DESCRIPTIONS": ["At the start of your next turn, lose 8 HP."]
   },
   "JupiterJazz_Spike": {
     "NAME": "Jupiter Jazz",

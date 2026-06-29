@@ -9,7 +9,7 @@ public class TwentyFourHoursOpen_Spike extends AbstractSpikeCard {
     public static final String ID = "TwentyFourHoursOpen_Spike";
     private static final String IMG = "img/cards_Spike/TwentyFourHoursOpen.png";
     private static final int COST = 1;
-    private static final int BLOCK = 4;
+    private static final int BLOCK = 6;
     private static final int UPGRADE_BLOCK = 3;
     private static final int DRAW = 1;
 

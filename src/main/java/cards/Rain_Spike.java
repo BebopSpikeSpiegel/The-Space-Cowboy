@@ -9,8 +9,8 @@ public class Rain_Spike extends AbstractSpikeCard {
     public static final String ID = "Rain_Spike";
     private static final String IMG = "img/cards_Spike/Rain.png";
     private static final int COST = 1;
-    private static final int BLOCK = 5;
-    private static final int BIG_BLOCK = 8;
+    private static final int BLOCK = 6;
+    private static final int BIG_BLOCK = 11;
     private static final int FLOW_THRESHOLD = 3;
     private static final int UPGRADE_BLOCK = 2;
     private static final int UPGRADE_BIG = 3;

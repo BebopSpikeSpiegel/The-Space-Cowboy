@@ -118,8 +118,8 @@
   },
   "Bang_Spike": {
     "NAME": "Bang.",
-    "DESCRIPTION": "Deal !D! damage, plus !M! damage per Flow. Lose all Flow. NL At the start of your next turn, lose half your current HP. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage, plus !M! damage per Flow. Lose all Flow. NL At the start of your next turn, if any enemy is alive, you die. NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage, plus !M! damage per Flow. Lose all Flow. NL At the start of your next turn, lose 8 HP. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage, plus !M! damage per Flow. Lose all Flow. NL Exhaust."
   },
   "BalladOfFallenAngels_Spike": {
     "NAME": "Ballad of Fallen Angels",

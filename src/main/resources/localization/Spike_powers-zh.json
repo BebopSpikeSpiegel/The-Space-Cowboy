@@ -5,7 +5,7 @@
   },
   "CarryThatWeight_Spike": {
     "NAME": "Carry That Weight",
-    "DESCRIPTIONS": ["你的下回合开始时，失去当前一半的生命值。", "你的下回合开始时，若仍有敌人存活，你将死亡。"]
+    "DESCRIPTIONS": ["你的下回合开始时，失去 8 点生命值。"]
   },
   "JupiterJazz_Spike": {
     "NAME": "Jupiter Jazz",

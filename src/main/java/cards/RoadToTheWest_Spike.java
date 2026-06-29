@@ -11,7 +11,7 @@ public class RoadToTheWest_Spike extends AbstractSpikeCard {
     private static final String IMG = "img/cards_Spike/RoadToTheWest.png";
     private static final int COST = 2;
     private static final int DAMAGE = 8;
-    private static final int PER_FLOW = 2;
+    private static final int PER_FLOW = 3;
     private static final int UPGRADE_PER_FLOW = 1;
 
     public RoadToTheWest_Spike() {

@@ -8,7 +8,7 @@ public class Dodge_Spike extends AbstractSpikeCard {
     public static final String ID = "Dodge_Spike";
     private static final String IMG = "img/cards_Spike/Dodge.png";
     private static final int COST = 1;
-    private static final int BLOCK = 5;
+    private static final int BLOCK = 6;
     private static final int UPGRADE_BLOCK = 3;
 
     public Dodge_Spike() {
