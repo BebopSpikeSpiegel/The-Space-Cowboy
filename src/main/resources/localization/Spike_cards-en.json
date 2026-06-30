@@ -33,7 +33,7 @@
   },
   "Rain_Spike": {
     "NAME": "Rain",
-    "DESCRIPTION": "Gain !B! Block. If you have 3 or more Flow, gain !M! Block instead."
+    "DESCRIPTION": "Gain !B! Block. Spend up to !M! Flow; gain 3 additional Block for each Flow spent."
   },
   "Rush_Spike": {
     "NAME": "Rush",
@@ -58,7 +58,7 @@
   },
   "HeavyMetalQueen_Spike": {
     "NAME": "Heavy Metal Queen",
-    "DESCRIPTION": "Deal !D! damage. Increased by !M! for each Flow you have."
+    "DESCRIPTION": "Deal !D! damage, plus !M! damage per Flow. Lose all Flow."
   },
   "WaltzForVenus_Spike": {
     "NAME": "Waltz for Venus",
@@ -74,7 +74,7 @@
   },
   "CowboyFunk_Spike": {
     "NAME": "Cowboy Funk",
-    "DESCRIPTION": "Deal !D! damage !M! times. If you have 3 or more Flow, hit 1 additional time."
+    "DESCRIPTION": "Deal !D! damage !M! times. If you have 3 or more Flow, attack 1 additional time and lose 3 Flow."
   },
   "SpeakLikeAChild_Spike": {
     "NAME": "Speak Like a Child",

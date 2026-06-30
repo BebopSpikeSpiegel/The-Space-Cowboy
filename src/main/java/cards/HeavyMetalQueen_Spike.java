@@ -12,7 +12,7 @@ public class HeavyMetalQueen_Spike extends AbstractSpikeCard {
     private static final int COST = 2;
     private static final int DAMAGE = 8;
     private static final int UPGRADE_DMG = 4;
-    private static final int PER_FLOW = 2;
+    private static final int PER_FLOW = 3;
 
     public HeavyMetalQueen_Spike() {
         super(ID, IMG, COST, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ENEMY);
@@ -23,6 +23,13 @@ public class HeavyMetalQueen_Spike extends AbstractSpikeCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         dealDamage(m, AbstractGameAction.AttackEffect.SLASH_HEAVY);
+        loseAllFlow();
+    }
+
+    @Override
+    public void triggerOnGlowCheck() {
+        this.glowColor = getFlow() > 0
+                ? AbstractCard.GOLD_BORDER_GLOW_COLOR : AbstractCard.BLUE_BORDER_GLOW_COLOR;
     }
 
     @Override

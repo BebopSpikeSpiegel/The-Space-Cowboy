@@ -32,6 +32,10 @@ public class CowboyFunk_Spike extends AbstractSpikeCard {
         for (int i = 0; i < this.magicNumber; i++) {
             dealDamage(m, AbstractGameAction.AttackEffect.BLUNT_LIGHT);
         }
+        // The extra hit (granted in applyPowers when at threshold) costs Flow.
+        if (this.magicNumber > HITS) {
+            spendFlow(FLOW_THRESHOLD);
+        }
     }
 
     @Override

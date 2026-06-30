@@ -33,7 +33,7 @@
   },
   "Rain_Spike": {
     "NAME": "Rain",
-    "DESCRIPTION": "获得 !B! 点格挡。若你拥有至少 3 点势，改为获得 !M! 点格挡。"
+    "DESCRIPTION": "获得 !B! 点格挡。消耗至多 !M! 点势，每消耗 1 点额外获得 3 点格挡。"
   },
   "Rush_Spike": {
     "NAME": "Rush",
@@ -58,7 +58,7 @@
   },
   "HeavyMetalQueen_Spike": {
     "NAME": "Heavy Metal Queen",
-    "DESCRIPTION": "造成 !D! 点伤害。每拥有 1 点势，伤害提高 !M! 点。"
+    "DESCRIPTION": "造成 !D! 点伤害，每点势额外造成 !M! 点伤害。失去所有势。"
   },
   "WaltzForVenus_Spike": {
     "NAME": "Waltz for Venus",
@@ -74,7 +74,7 @@
   },
   "CowboyFunk_Spike": {
     "NAME": "Cowboy Funk",
-    "DESCRIPTION": "造成 !D! 点伤害 !M! 次。若你拥有至少 3 点势，则额外攻击 1 次。"
+    "DESCRIPTION": "造成 !D! 点伤害 !M! 次。若你拥有至少 3 点势，则额外攻击 1 次并失去 3 点势。"
   },
   "SpeakLikeAChild_Spike": {
     "NAME": "Speak Like a Child",
