@@ -217,7 +217,15 @@ public class Spike extends CustomPlayer {
 
     @Override
     public AbstractGameAction.AttackEffect[] getSpireHeartSlashEffect() {
-        return new AbstractGameAction.AttackEffect[0];
+        // Must be non-empty: SpireHeart divides/mods by this array's length for the kill animation.
+        return new AbstractGameAction.AttackEffect[] {
+                AbstractGameAction.AttackEffect.SLASH_HEAVY,
+                AbstractGameAction.AttackEffect.FIRE,
+                AbstractGameAction.AttackEffect.BLUNT_HEAVY,
+                AbstractGameAction.AttackEffect.SLASH_DIAGONAL,
+                AbstractGameAction.AttackEffect.SMASH,
+                AbstractGameAction.AttackEffect.SLASH_HORIZONTAL
+        };
     }
 
     @Override
