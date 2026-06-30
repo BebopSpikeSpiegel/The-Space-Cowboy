@@ -1,8 +1,10 @@
 package cards;
 
+import actions.ChooseDiscardCopyToHandAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
@@ -21,8 +23,13 @@ public class CallMeCallMe_Spike extends AbstractSpikeCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         if (!p.discardPile.group.isEmpty()) {
-            AbstractCard c = p.discardPile.getRandomCard(AbstractDungeon.cardRandomRng).makeStatEquivalentCopy();
-            AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(c, 1));
+            if (this.upgraded) {
+                // Upgraded: let the player pick which card to recall.
+                AbstractDungeon.actionManager.addToBottom(new ChooseDiscardCopyToHandAction(p));
+            } else {
+                AbstractCard c = p.discardPile.getRandomCard(AbstractDungeon.cardRandomRng).makeStatEquivalentCopy();
+                AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(c, 1));
+            }
         }
         gainFlow(this.magicNumber);
     }
@@ -31,9 +38,8 @@ public class CallMeCallMe_Spike extends AbstractSpikeCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            this.cost = 0;
-            this.costForTurn = 0;
-            this.upgradedCost = true;
+            this.rawDescription = CardCrawlGame.languagePack.getCardStrings(ID).UPGRADE_DESCRIPTION;
+            initializeDescription();
         }
     }
 

@@ -110,7 +110,8 @@
   },
   "CallMeCallMe_Spike": {
     "NAME": "Call Me Call Me",
-    "DESCRIPTION": "Add a copy of a random card from your discard pile to your hand. Gain !M! Flow."
+    "DESCRIPTION": "Add a copy of a random card from your discard pile to your hand. Gain !M! Flow.",
+    "UPGRADE_DESCRIPTION": "Add a copy of a card chosen from your discard pile to your hand. Gain !M! Flow."
   },
   "SkiesOfGanymede_Spike": {
     "NAME": "Skies of Ganymede",

@@ -110,7 +110,8 @@
   },
   "CallMeCallMe_Spike": {
     "NAME": "Call Me Call Me",
-    "DESCRIPTION": "将你弃牌堆中一张随机牌的复制加入手牌。获得 !M! 点势。"
+    "DESCRIPTION": "将你弃牌堆中一张随机牌的复制加入手牌。获得 !M! 点势。",
+    "UPGRADE_DESCRIPTION": "将你弃牌堆中一张自选牌的复制加入手牌。获得 !M! 点势。"
   },
   "SkiesOfGanymede_Spike": {
     "NAME": "Skies of Ganymede",

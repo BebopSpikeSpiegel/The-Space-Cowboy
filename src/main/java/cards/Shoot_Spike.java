@@ -15,6 +15,7 @@ public class Shoot_Spike extends AbstractSpikeCard {
     private static final int DAMAGE = 6;
     private static final int UPGRADE_DMG = 3;
     private static final int VULN = 1;
+    private static final int UPGRADE_VULN = 1;
 
     public Shoot_Spike() {
         super(ID, IMG, COST, CardType.ATTACK, CardRarity.BASIC, CardTarget.ENEMY);
@@ -34,6 +35,7 @@ public class Shoot_Spike extends AbstractSpikeCard {
         if (!this.upgraded) {
             upgradeName();
             upgradeDamage(UPGRADE_DMG);
+            upgradeMagicNumber(UPGRADE_VULN);
         }
     }
 
