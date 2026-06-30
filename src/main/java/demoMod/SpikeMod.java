@@ -2,6 +2,7 @@ package demoMod;
 
 import basemod.BaseMod;
 import basemod.interfaces.*;
+import events.BellPeppersAndBeefEvent;
 import events.BigShotEvent;
 import events.JupiterJazzEvent;
 import events.ToysInTheAtticEvent;
@@ -201,6 +202,7 @@ public class SpikeMod implements RelicGetSubscriber, PostPowerApplySubscriber, P
         BaseMod.addEvent(BigShotEvent.ID, BigShotEvent.class);
         BaseMod.addEvent(ToysInTheAtticEvent.ID, ToysInTheAtticEvent.class);
         BaseMod.addEvent(JupiterJazzEvent.ID, JupiterJazzEvent.class);
+        BaseMod.addEvent(BellPeppersAndBeefEvent.ID, BellPeppersAndBeefEvent.class);
     }
 
 }

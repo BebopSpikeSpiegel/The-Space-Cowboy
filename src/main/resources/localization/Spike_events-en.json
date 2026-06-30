@@ -39,5 +39,23 @@
       "Move On",
       "Leave"
     ]
+  },
+  "BellPeppersAndBeef_Spike": {
+    "NAME": "Bell Peppers and Beef",
+    "DESCRIPTIONS": [
+      "The diner's cheapest plate: bell peppers and beef - hold the beef, you're broke again. Still, it's hot, and it's food. NL \"Whatever. Let's just eat.\"",
+      "You clean the plate. Greasy, green, and somehow exactly what you needed. You feel a little more human.",
+      "You slap your last bills on the counter for the real thing - beef and all. It goes down like a proper meal, and you feel genuinely restored.",
+      "You push the plate away. Maybe later. Hunger's a feeling you're used to."
+    ],
+    "OPTIONS": [
+      "[Eat] Dig in. Heal ",
+      " HP.",
+      "[Add the Beef] Pay ",
+      " Gold, heal ",
+      " HP.",
+      "[Leave] Not hungry.",
+      "[ Leave ]"
+    ]
   }
 }
